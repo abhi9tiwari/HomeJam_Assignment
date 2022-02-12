@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import NavBar from './components/NavBar';
 import './App.css';
+import TopSection from './components/TopSection';
+import UpcomingShows from './components/UpcomingShows';
+import Studio from './components/Studio';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar title="HomeJam"/>
+      <TopSection CompanyTitle = "HomeJam" CompanyType="Multimedia"/>
+      <UpcomingShows UpcomingShowsone = "Attack On Titan" UpcomingShowstwo = "JoJo's Bizzare Adventure" UpcomingShowsthree = "Vinland Saga" UpcomingShowsfour = "Grave Of Fireflies"/>
+      <Studio StudioOne="MAPPA" StudioTwo="UFOTABLE" StudioThree="STUDIO GHIBLI" StudioFour="BONES" StudioFive="KYOTO ANIMATION" StudioSix="WIT STUDIO"/>
+      <Footer/>
     </div>
   );
 }
