@@ -34,14 +34,14 @@ function TopSection(props) {
       <div className="carousel-inner">
         <div className="carousel-item active">
 //           <img src="../cimages/warriorf.jpg" className="d-block w-100" alt="img" />
-          <img src={require('./cimages/warriorf.jpg')} className="d-block w-100" alt="img"/>
+          <img src={require('../cimages/warriorf.jpg')} className="d-block w-100" alt="img"/>
           <div className="carousel-caption d-none d-md-block">
             <h5>Welcome to {props.CompanyTitle}</h5>
             <p>An immersive {props.CompanyType} experience.</p>
           </div>
         </div>
         <div className="carousel-item">
-          <img src="./cimages/tanjirof.jpg" className="d-block w-100" alt="img" />
+          <img src="../cimages/tanjirof.jpg" className="d-block w-100" alt="img" />
           <div className="carousel-caption d-none d-md-block">
             <h5>Demon Slyer</h5>
             <p>Breath taking animations with amazing storyline.</p>
